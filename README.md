@@ -12,5 +12,6 @@ Code that's not part of any other project but may eventually be reused.
 * **pseudoRND.bas** - Generates a random table that can be reset and reused unlike the native random table.
 * **sandParticles.bas** - Prototype of a particle system that attempted to resemble sand.
 * **scoreboard.bas** - Contains code used to fetch and update a scoreboard text file on a non-HTTPs, PHP-enabled server.
+* **shadow.bas** - A controllable source of light casts a shadow on screen.
 * **svg.bas** - SVG renderer. Limited, but functional for simple files.
 * **voxel.bas** - Faux-voxel rendering/drawing.
