@@ -1,6 +1,7 @@
 # Snippets
 Code that's not part of any other project but may eventually be reused.
 
+* **loadImage256.bas** - Loads an 8-bit image with proper palette adjustments and returns a handle. Can be used with 32-bit images as long as they contain 256 colors max (errors otherwise).
 * **bouncingBalls.bas** - Pseudo physics engine with rubber balls that can be dropped with a mouse click and that interact with each other. A "boing" sound file is embedded in the code and is dumped to disk at startup.
 * **conway.bas** - Conway's game of life - uses too much CPU, needs optimizing.
 * **drawGen.bas** - Generates DRAW command strings by allowing you to draw with the mouse, pick colors, close shapes and paint. More details at http://www.qb64.net/forum/index.php?topic=14253.msg123332#msg123332 
