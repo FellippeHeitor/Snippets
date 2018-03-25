@@ -1,0 +1,17 @@
+$SCREENHIDE
+
+DIM m AS _MEM, image AS LONG
+
+IF _FILEEXISTS(COMMAND$) THEN f$ = COMMAND$ ELSE SYSTEM
+
+image = _LOADIMAGE(f$, 32)
+m = _MEMIMAGE(image)
+
+a$ = SPACE$(_WIDTH(image) * _HEIGHT(image) * 4)
+_MEMGET m, m.OFFSET, a$
+_MEMFREE m
+PRINT LEN(a$)
+OPEN f$ + ".imagedump" FOR BINARY AS #1
+PUT #1, 1, a$
+CLOSE
+SYSTEM
