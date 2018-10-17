@@ -5,8 +5,10 @@ DO
     CLS , _RGB32(51, 51, 51)
 
     'the shadow being cast... sort of
-    shadow~& = _RGBA32(0, 0, 0, map(dist(_MOUSEX, _MOUSEY, _WIDTH / 2, _HEIGHT / 2), 0, _WIDTH / 2, 255, 0))
-    CircleFill _WIDTH / 2 - (_MOUSEX - _WIDTH / 2), _HEIGHT / 2 - (_MOUSEY - _HEIGHT / 2), 60, shadow~&
+    shadow~& = _RGBA32(0, 0, 0, map(dist(_MOUSEX, _MOUSEY, _WIDTH / 2, _HEIGHT / 2), 0, _WIDTH / 1.5, 255, 0))
+    FOR i = 60 TO map(dist(_MOUSEX, _MOUSEY, _WIDTH / 2, _HEIGHT / 2), 0, _WIDTH / 1.5, 60, 512) STEP 5
+        CircleFill _WIDTH / 2 - (_MOUSEX - _WIDTH / 2), _HEIGHT / 2 - (_MOUSEY - _HEIGHT / 2), i, shadow~&
+    NEXT
 
     'the object being lit
     CircleFill _WIDTH / 2, _HEIGHT / 2, 60, _RGB32(255, 255, 255)
