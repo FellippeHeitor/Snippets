@@ -55,6 +55,22 @@ clearMouseBuffer
 
 drawing$ = "B C" + LTRIM$(STR$(_RGB32(penR, penG, penB))) + " " 'begin with a blind move and white pen
 
+_ECHO "Instructions: --------------------"
+_ECHO "- Draw with your mouse to generate a string for the DRAW command."
+_ECHO "- Hold Shift to show the original image and activate the color picker."
+_ECHO "- While the color picker is on, click with left mouse button to pick PEN color;"
+_ECHO "    Click with right mouse button to pick FILL color."
+_ECHO "- When you start drawing you begin a shape. Hit ENTER to close the shape."
+_ECHO "- To break the shape without closing it, hit B."
+_ECHO "- Hit C to show the color mixer."
+_ECHO "- Hit Backspace or Ctrl+Z to undo movements."
+_ECHO "- Hit Ctrl+C to copy the string to the clipboard."
+_ECHO "- Hit Ctrl+V to paste a DRAW string from the clipboard."
+_ECHO "- Hit I to swap PEN and FILL colors."
+_ECHO "- Hit DELETE to erase the current drawing (cannot be undone)."
+_ECHO "- Place the mouse inside a closed area and hit P to paint with the current FILL color."
+_ECHO "-----------------------------------"
+
 DO
     _LIMIT 60
 
@@ -297,10 +313,7 @@ IF undobyUser THEN c "Last instruction undone.": RETURN
 RESUME
 
 SUB c (t$)
-    _DEST _CONSOLE
-    PRINT
-    PRINT t$
-    _DEST 0
+    _ECHO t$
 END SUB
 
 FUNCTION colorPicker
@@ -499,4 +512,3 @@ END FUNCTION
 FUNCTION max! (a!, b!)
     IF a! > b! THEN max! = a! ELSE max! = b!
 END FUNCTION
-
