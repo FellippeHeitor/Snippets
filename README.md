@@ -22,5 +22,6 @@ Code that's not part of any other project but may eventually be reused.
 * **scoreboard.bas** - Contains code used to fetch and update a scoreboard text file on a non-HTTPs, PHP-enabled server.
 * **scrollbar.bas** - Scrollbar study.
 * **shadow.bas** - A controllable source of light casts a shadow on screen.
+* **StrUsing.bas** - A function to render a PRINT USING formatted string onto a variable.
 * **svg.bas** - SVG renderer. Limited, but functional for simple files.
 * **voxel.bas** - Faux-voxel rendering/drawing.
