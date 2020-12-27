@@ -11,7 +11,7 @@ Code that's not part of any other project but may eventually be reused.
 * **fontglypharray.bas** - The code will create an array with coordinates of points surrounding the text provided. It'll scan whatever text you enter and fill Points(x, y). In the end, said coordinates are plotted on the screen, as well as copied to the clipboard as data statements you can paste in another QB64 program. The whole point of writing this was to have a starting point for recreating the coding challenge from this video: https://youtu.be/4hA7G3gup-4
 * **getToday** gets today's date from qb64.org/today.php
 * **host-client** - Host-client sample for TCP/IP communication.
-* **hunterImagePreview.bas** - Simple image previewer; added for reference on how to stretch images while keeping aspect ratio.
+* **ImagePreview.bas** - Simple image previewer; added for reference on how to stretch images while keeping aspect ratio.
 * **iconpreview.bas** - Contains a function that loads the specified ".ico" file and returns a handle to the image in memory.
 * **lineWithDraw.bas** - Draws a thick line from point A to point B by using DRAW instructions.
 * **largeFont16.bas** - Contains the BIOS emulated font extract from libqb.cpp (QB64) and uses it to draw it at larger sizes. Routines to emulate _PRINTSTRING, _FONTHEIGHT, _FONTWIDTH and _PRINTWIDTH included.
