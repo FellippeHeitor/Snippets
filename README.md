@@ -15,6 +15,7 @@ Code that's not part of any other project but may eventually be reused.
 * **iconpreview.bas** - Contains a function that loads the specified ".ico" file and returns a handle to the image in memory.
 * **lineWithDraw.bas** - Draws a thick line from point A to point B by using DRAW instructions.
 * **largeFont16.bas** - Contains the BIOS emulated font extract from libqb.cpp (QB64) and uses it to draw it at larger sizes. Routines to emulate _PRINTSTRING, _FONTHEIGHT, _FONTWIDTH and _PRINTWIDTH included.
+* **printWrap.bas** - Routine to PRINT and wrap text in SCREEN 0.
 * **pseudoRND.bas** - Generates a random table that can be reset and reused unlike the native random table.
 * **rotateImage.bas** - Uses _MAPTRIANGLE to rotate an image freely.
 * **sandParticles.bas** - Prototype of a particle system that attempted to resemble sand.
